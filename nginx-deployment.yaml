@@ -18,12 +18,12 @@ spec:
       - name: nginx
         image: nginx:latest
         volumeMounts:
-        - mountPath: /usr/share/nginx/html
+        - mountPath: /usr/share/nginx/html/
           name: html-volume
       volumes:
       - name: html-volume
         hostPath:
-          path: /usr/share/nginx/html#
+          path: /usr/share/nginx/html/
           type: Directory
         ports:
         - containerPort: 80
