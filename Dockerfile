@@ -6,8 +6,6 @@ WORKDIR /usr/share/nginx/html
 
 RUN rm -rf *
 
-COPY ./out/ .
-
 RUN chown nginx: ./*
 
 COPY ./nginx.conf /etc/nginx/conf.d
