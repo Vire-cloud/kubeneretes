@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: ubuntu906/nginx-custom:latest
+        image: ubuntu906/nginx1:1.0
         ports:
         - containerPort: 80
         volumeMounts:
